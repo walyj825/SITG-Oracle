@@ -54,3 +54,25 @@ Claw Agent: Handles the unstructured social text and translates it into a strict
 OKX Onchain OS Data Layer: Provides the indisputable ground truth. We rely on OKX's robust RPC and indexing to trace asset flows accurately without building custom indexers.
 
 Scoring Engine: A deterministic logic matrix that outputs the final SITG Score based on the delta between words and actions.
+
+Quick Start & Deployment (快速部署)
+## 📦 Quick Start & Deployment
+SITG Oracle is built with reproducibility in mind. Any developer can clone this repository, plug in their API keys, and run the forensic engine locally.
+
+### 1. Clone & Install
+```bash
+git clone [https://github.com/walyj825/SITG-Oracle.git](https://github.com/walyj825/SITG-Oracle.git)
+cd SITG-Oracle
+pip install -r requirements.txt
+```
+2. Environment Setup
+Copy the example environment file and insert your OKX Onchain OS API keys and LLM tokens.
+```bash
+cp .env.example .env
+# Edit .env with your favorite editor
+```
+3. Run the Forensic Terminal
+```bash
+python main.py --url "[https://twitter.com/example/status/123](https://twitter.com/example/status/123)" --target-wallet "0xYourWallet..."
+```
+(Note: If API keys are not detected in the .env file, the engine will automatically gracefully degrade to Sandbox/Mock Mode for hackathon demonstration purposes.)
