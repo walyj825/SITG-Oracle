@@ -46,3 +46,11 @@ If you shill it, you better hold it.
 [!] SITG SCORE     : 0 / 100 (Exit Scam Alert / Paper Hands)
 =============================================================
 [SYSTEM] "Don't trust the tweet. Verify the wallet." Awaiting next URL...
+```
+
+🛠️ Architecture & Modularity
+Claw Agent: Handles the unstructured social text and translates it into a strict JSON intent (Token, Sentiment, Timeframe).
+
+OKX Onchain OS Data Layer: Provides the indisputable ground truth. We rely on OKX's robust RPC and indexing to trace asset flows accurately without building custom indexers.
+
+Scoring Engine: A deterministic logic matrix that outputs the final SITG Score based on the delta between words and actions.
