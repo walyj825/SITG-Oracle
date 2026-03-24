@@ -1,0 +1,20 @@
+{
+  "system_info": "SITG Oracle Identity Resolution Mapping (Hackathon Mock)",
+  "twitter_handles": {
+    "crypto_whale": {
+      "ens": "whale.eth",
+      "main_wallet": "0x8F3b08198fA08D19F26c265Fda922E06B2029aB2",
+      "risk_level": "HIGH"
+    },
+    "diamond_hands_bob": {
+      "ens": "bob_vault.eth",
+      "main_wallet": "0x1A2c...3dE4",
+      "risk_level": "LOW"
+    },
+    "shitcoin_shiller": {
+      "ens": null,
+      "main_wallet": "0xDEAD00000000000000000000000000000000BEEF",
+      "risk_level": "CRITICAL"
+    }
+  }
+}
