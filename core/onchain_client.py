@@ -27,7 +27,7 @@ class OKXOnchainClient:
 
         print(f"[OKX OS Client] Fetching onchain truth for {wallet_address} via Live API...")
         
-        # 真实的 API 路由结构演示 (让评委知道你查过文档)
+        # 真实的 API 路由结构演示 
         endpoint = f"{self.base_url}/api/v5/explorer/address/token-transfers"
         headers = {
             "OK-ACCESS-KEY": self.api_key,
